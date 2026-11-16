@@ -1,0 +1,25 @@
+$ErrorActionPreference = 'Stop'
+$PSNativeCommandUseErrorActionPreference = $true
+$QHDOPT_ROOT = Split-Path -Parent $PSScriptRoot
+$QHDOPT_PROJECT = Join-Path $QHDOPT_ROOT '.local/julia-env'
+$QHDOPT_PYTHON = Join-Path $QHDOPT_ROOT '.local/venvs/beta/Scripts/python.exe'
+$env:JULIA_DEPOT_PATH = Join-Path $QHDOPT_ROOT '.local/julia-depot'
+$env:JULIA_LOAD_PATH = '@;@stdlib'
+$env:JULIA_HISTORY = Join-Path $QHDOPT_ROOT '.local/julia_history'
+$env:JULIA_PKG_PRECOMPILE_AUTO = '0'
+$env:JULIA_NUM_PRECOMPILE_TASKS = '1'
+$env:JULIA_NUM_THREADS = '1'
+$env:OPENBLAS_NUM_THREADS = '1'
+$env:OMP_NUM_THREADS = '1'
+$env:MKL_NUM_THREADS = '1'
+$env:JAX_PLATFORMS = 'cpu'
+$env:PYTHONDONTWRITEBYTECODE = '1'
+$env:PYTHONNOUSERSITE = '1'
+$env:TEMP = Join-Path $QHDOPT_ROOT '.local/tmp'
+$env:TMP = $env:TEMP
+$env:TMPDIR = $env:TEMP
+$env:PIP_CACHE_DIR = Join-Path $QHDOPT_ROOT '.local/cache/pip'
+$env:XDG_CACHE_HOME = Join-Path $QHDOPT_ROOT '.local/cache'
+$env:JAX_COMPILATION_CACHE_DIR = Join-Path $QHDOPT_ROOT '.local/cache/jax'
+$env:PIP_DISABLE_PIP_VERSION_CHECK = '1'
+New-Item -ItemType Directory -Force -Path $env:TEMP,$env:PIP_CACHE_DIR,$env:JAX_COMPILATION_CACHE_DIR | Out-Null

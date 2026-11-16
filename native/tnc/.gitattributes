@@ -1,0 +1,4 @@
+tnc.c text eol=lf
+tnc.h text eol=lf
+LICENSE text eol=lf
+*.dll binary

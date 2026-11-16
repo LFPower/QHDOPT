@@ -1,0 +1,32 @@
+# Portable hashes of the pinned package: normalize CRLF/CR to LF first.
+# Aggregate bytes: tag + revision + LF, then sorted UTF-8 path + NUL + ASCII hash + LF.
+manifest_version = 1
+source_revision = "153eb6b385a906b13807c9a28598aa44973b6cc4"
+normalization = "CRLF/CR to LF; preserve all other bytes"
+file_count = 23
+source_sha256 = "9568bed809b0287d70b18f2b6eb9161c75be3a25e88deaa4b192f6bf780dc687"
+
+[files]
+"__init__.py" = "a9b095697341b690c0d3231d463e168eb4bf672c97aa5c942544c10ed0a0b52a"
+"backends/__init__.py" = "a931e5e375671ae7e3a1f4c2587f244e3eb4f8831814808c737fbb18145f6f76"
+"backends/backend.py" = "9ef7ba981eb2d8613e3cd553b492ad96a376abe81eff9e2708cd34f69f924fce"
+"backends/qihd.py" = "599f22b819dd77d8de54385cb2ea08f3fea8b94cb45d3a1a53b476da0ea53575"
+"phi_miqp.py" = "d223ff292f8e0031a3d4343bca768f5c88b02f7f4a17e3cc6c82b92f8d3be742"
+"problems/__init__.py" = "a43e9a082da718cad784e345983d6ef4fdd19be6a0a0b4e584e4dcc5665dded7"
+"problems/boxqp.py" = "cbf84298eaee08c11cac21717edac783e31244b59c3b0641b64deedcd0f4c431"
+"problems/lcqp.py" = "65a360f420005bcc1eb16968cb5f963765c0c43abc5fb0ec0d017c680f946e87"
+"problems/miqp.py" = "bf8597d280b783f6b8c384fa239c0856019caff4e7db0b3a5fc6b98aef70c99a"
+"problems/problem.py" = "9315d85ead8dacbaea84930e6fe273b89dc96b409d2f15b670c5b7c309c02f43"
+"problems/qubo.py" = "54de5b2a396e7f9ad00a53a3934ff136a2e8060a5b65edd25de964dfb11bc895"
+"refiners/__init__.py" = "e5e2c63021b3bad97e0311c3dd4ef65f7a2c9dbd93b219445083285337079103"
+"refiners/ipopt_minimize.py" = "9836a679ba471480e5e3a1de4baac762d260e38c762bc09cba0d1c459153854e"
+"refiners/jax_adam.py" = "9141b76e19b8ef38f4d2152ec75e4728d88a95963a79e4b08ce328364451e02d"
+"refiners/pdqp.py" = "88694ca14572797647ee777c690a4a48cde6d49769ccf76cbec5996a797cff47"
+"refiners/refiner.py" = "1ce8b832f9c18e34b6049f6384c099aacd7504235ecbf7be57f1ec23ec3fdd8f"
+"refiners/scipy_minimize.py" = "6073c3ae31886992cdc2c7626b4695c70000a1c505deeaba7d5834e16ff9bb01"
+"response.py" = "6856ab42a4bdafe5c8db9574f300f682c15535b540000f2b07b34bf83af66558"
+"utils/__init__.py" = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+"utils/decoding_utils.py" = "bcf4838ee03c81459a364995524a770fe45b17fdacd9feb5eef41845ea515eee"
+"utils/file_utils.py" = "41ae5a26dda9249ac61917cc929fca964ca6e07a0d10d00d38c84ca2bbf05ef6"
+"utils/integrator.py" = "98698c169fca446ed39e6eea9e806634e4652c26838264ce255ddbc63285ccae"
+"utils/jax_utils.py" = "e26309a3c3da20074763c7dc129fd59e70e63a0da3d569e4c086691e81b44b6c"

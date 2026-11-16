@@ -1,0 +1,40 @@
+# Attached private beta 20261115221654; this identifier is not a Git commit.
+# Portable hashes normalize CRLF/CR to LF; preserve every other byte.
+# Aggregate: manifest tag + revision + LF, then sorted path + NUL + hash + LF.
+manifest_version = 1
+source_revision = "private-beta-20261115221654"
+normalization = "CRLF/CR to LF; preserve all other bytes"
+file_count = 28
+source_sha256 = "b5c5e615fa7f0be51cb1d960448cecebfbed0e003c2719f29b16c817b767db8b"
+package_version = "0.3.1b20261115221654"
+bundle_runtime_source_sha256 = "bb6eb4574f5e4476c48e428953b1757dcbb8b0ed6c56b27264f17c8cfd449249"
+
+[files]
+"__init__.py" = "c7b3d1da4c38459aa02a8e3ebf6c7d48395bdd94a86128439bd7962787b4b4f0"
+"backends/__init__.py" = "a931e5e375671ae7e3a1f4c2587f244e3eb4f8831814808c737fbb18145f6f76"
+"backends/backend.py" = "9ef7ba981eb2d8613e3cd553b492ad96a376abe81eff9e2708cd34f69f924fce"
+"backends/qihd.py" = "4b32c10911698077971e79a6118c659e8fec1a194e94e8e87ef7453483665665"
+"exceptions.py" = "ea6284d9e7d9f21d5e53569be3c40681e48d190a3c12b147e0ebe6c0eca2da78"
+"phi_miqp.py" = "4e1933befcd89e159e254d1ced1f4bcac7c4db404dff3093a95e258528a716f3"
+"problems/__init__.py" = "a43e9a082da718cad784e345983d6ef4fdd19be6a0a0b4e584e4dcc5665dded7"
+"problems/boxqp.py" = "f593f89c4087daf6d937c3dfa27d5fee08b624114c0fff08861bdf008662b28d"
+"problems/lcqp.py" = "aff72b032ac4f47a5dfecf2ebb69f6d52208090ea1f9cd6e9a93ab12d2aa5516"
+"problems/miqp.py" = "a0d11d550a27f3bed293d119ff1086d37c2694398d81ebf6e9c3f73ff3ab8e63"
+"problems/problem.py" = "e6df84d424854f67f7987be042a4408135cb05b258c9d8779d872c79e851161e"
+"problems/qubo.py" = "5717e842ac45d9ac0803cdd18fa28cbcd95033d206de9e938b5cde09318af87e"
+"refiners/__init__.py" = "e5e2c63021b3bad97e0311c3dd4ef65f7a2c9dbd93b219445083285337079103"
+"refiners/ipopt_minimize.py" = "ff92d14a28aab5a1704de0cca2dd87baf22414b103c64f7cfe241ba87e1f554a"
+"refiners/jax_adam.py" = "8e09015a3e03edb89dc1c0b113b92c9ae3a694cc5f62de4ac765d79fa6a79fe1"
+"refiners/pdqp.py" = "b038a89eccdad0ad75b9dc0950bcd92c022ea72a3db12138a159314c5f7488b0"
+"refiners/refiner.py" = "6b899695caffca18f1e2f9cffb9e6c19491d2d241e5494032710d58b78a8082c"
+"refiners/scipy_minimize.py" = "3ac6a52eba943817638d3259f44eb3bdbe1cf6a8f08d729f945c5ecbad5274c6"
+"response.py" = "ca4b78d7881dbc02acd4783377ee9cf9e5dee252d200375187d86726d2c35f25"
+"utils/__init__.py" = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+"utils/decoding_utils.py" = "bcf4838ee03c81459a364995524a770fe45b17fdacd9feb5eef41845ea515eee"
+"utils/device_utils.py" = "8e94216450dcc89025c6de7ef500185b96bfe2b77547a1157a79525962b31a36"
+"utils/file_utils.py" = "4695cf8f413df929e0c550b7bc9ef16b4378e03605866cd05f5462fb15350321"
+"utils/integrator.py" = "66ec816cba1bf32ff8b7246746e538b5c5428d1ada7a16ffd314a4ccee3aa1df"
+"utils/jax_utils.py" = "2e9772bcb9e6d59200935023f2f5f9d934e4d22acf59b1d7082e8e0a74e77eb8"
+"utils/model_validation.py" = "b27284d90f10b87234cdc3b903f84bbdae3f97f620e5b5e5738beebf6b80a8ed"
+"utils/precision.py" = "e112880f21ed6812ad9e1b697d9c7f499cdd5773ab5c6a11eb3167efc52f6469"
+"validation.py" = "93a175da11f393770815ee085b81b7b069793f8160ba0998c712cdbd23a42b3b"

@@ -1,0 +1,15 @@
+upstream = "https://github.com/scipy/scipy"
+tag = "v1.11.4"
+tag_object = "9213366b4113df16757765195e2cd114468db86c"
+commit = "5e4a5e3785f79dd4e8930eed883da89958860db2"
+directory = "scipy/optimize/tnc"
+abi = 1
+
+[sha256]
+"tnc.c" = "03659d7e317b82d99cb84519af7dd9c8f3bb7c60d77e1916ba7be4ad58e5d39b"
+"tnc.h" = "50a434cdb2a7ad01ac243e372cfdcd757e3a509d74465d59a1daa9341c6003ac"
+LICENSE = "3df9207af2fdb861af0ae3b22026f163b9bcfab4e525dc4943afe2ffa3f77624"
+
+[prebuilt.windows-x86_64]
+sha256 = "4c556f3f3197b92281bfa73ff32d8147a60420fd7944c7d878f7d3380cf3a3ae"
+compiler = "MSVC 19.41.34120, x64, /O2 /MT /fp:precise /Brepro"

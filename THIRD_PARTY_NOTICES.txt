@@ -1,0 +1,48 @@
+# Third-party notices
+
+This local QHDOPT public-distribution candidate includes the components below.
+QHDOPT's project-level licensing and distribution terms remain undecided.
+These notices preserve component terms and do not license the Julia rewrite
+or authorize publication of this work-in-progress candidate.
+
+OpenPhiSolve / phisolve beta worker
+----------------------------------
+The unmodified wheel in python/wheels/ is phisolve version
+0.3.1b20261115221654. Its BSD 3-Clause license is included in the wheel
+and reproduced in python/wheels/LICENSE.OpenPhiSolve.
+Retain its copyright, conditions, and disclaimer when redistributing it.
+The installer verifies the wheel digest and installed source profile.
+
+Original QHDOPT reference implementation
+----------------------------------------
+The original Python implementation was used as a reference:
+https://github.com/PhysOpt/QHDOPT/tree/0f1aec6d1ed83a446fca01f5d23ad1edb7ecdc36
+Its BSD 3-Clause notice is retained in
+LICENSES/QHDOPT-original-BSD-3-Clause.txt.
+This attribution does not assign that license to the new Julia implementation.
+
+Native TNC
+----------
+The TNC source is derived from SciPy 1.11.4 and retains its MIT license.
+Retain native/tnc/LICENSE and
+native/tnc/artifacts/windows-x86_64/LICENSE with the corresponding files.
+Pinned source and binary identities and compiler information are recorded in
+native/tnc/source.toml. Source and build inputs are included; the documented
+installation uses the packaged Windows x86-64 DLL.
+
+The Windows DLL was built with MSVC using static runtime linkage (/MT).
+The TNC source license does not assign terms to Microsoft's runtime code
+or to the QHDOPT-owned ABI wrapper. Applicable Microsoft runtime terms and
+QHDOPT project terms remain distinct. No separate Microsoft runtime package
+is included. Microsoft's runtime deployment guidance is available at:
+https://learn.microsoft.com/en-us/cpp/windows/deployment-in-visual-cpp
+
+Separately installed dependencies
+---------------------------------
+Julia and Python dependencies installed by the documented setup retain
+their own licenses and notices. They are obtained from their declared
+public package sources and are not bundled as installed environments.
+
+The included component licenses do not establish a root license for QHDOPT.
+This candidate remains local until its project-level terms and final
+publication decision are resolved.
