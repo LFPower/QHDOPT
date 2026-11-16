@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this Julia implementation of QHDOPT in your research, please cite the original QHDOPT paper below. For reproducibility, also report the repository URL and the software version or commit you used."
+title: "QHDOPT: Julia implementation"
+type: software
+authors:
+  - family-names: Fan
+    given-names: Lei
+    email: lei.fan@ieee.org
+version: "0.1.0"
+license: BSD-3-Clause
+repository-code: "https://github.com/LFPower/QHDOPT"
+url: "https://github.com/LFPower/QHDOPT"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Kushnir
+      given-names: Samuel
+    - family-names: Leng
+      given-names: Jiaqi
+    - family-names: Peng
+      given-names: Yuxiang
+    - family-names: Fan
+      given-names: Lei
+    - family-names: Wu
+      given-names: Xiaodi
+  title: "QHDOPT: A Software for Nonlinear Optimization with Quantum Hamiltonian Descent"
+  journal: "INFORMS Journal on Computing"
+  year: 2025
+  volume: 37
+  issue: 1
+  start: 107
+  end: 124
+  doi: "10.1287/ijoc.2024.0587"
+  url: "https://doi.org/10.1287/ijoc.2024.0587"

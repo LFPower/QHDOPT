@@ -1,14 +1,21 @@
-# QHDOPT public-distribution candidate
+# QHDOPT
 
 QHDOPT solves bounded continuous optimization problems using a CPU sampling worker, checks candidate points against the original bounds and objective, and can apply local refinement. Use the native Julia API or the JuMP interface.
 
-This is a local work-in-progress candidate for a possible public distribution. It is not approved for publication: QHDOPT's project-level licensing and distribution terms remain undecided. The included third-party licenses apply to their own components and do not assign a license to QHDOPT.
+This repository provides the Julia implementation of QHDOPT. See [Citation](#citation) for the original QHDOPT paper and [License](#license) for the project and component terms.
 
-Sampling is heuristic: a usable candidate is not a general proof of global optimality. Use Windows x86-64, Julia 1.13.1, Python 3.12, and the included beta CPU worker. Linux, macOS, GPU, and quantum-hardware use are not supported by this candidate.
+Sampling is heuristic: a usable candidate is not a general proof of global optimality. Use Windows x86-64, Julia 1.13.1, Python 3.12, and the included beta CPU worker. Linux, macOS, GPU, and quantum-hardware use are not supported by this implementation.
 
-## Install the local candidate
+## Install
 
-Obtain the complete local candidate directory from the person preparing it. Open PowerShell 7.3 or newer in the candidate checkout root, the directory containing Project.toml and this README. These instructions do not designate a public download or repository.
+Open PowerShell 7.3 or newer and clone the public repository:
+
+~~~powershell
+git clone --branch main --single-branch https://github.com/LFPower/QHDOPT.git
+cd QHDOPT
+~~~
+
+Run the following commands from this checkout root, the directory containing Project.toml and this README.
 
 Install 64-bit Julia 1.13.1 and Python 3.12. Make their executables available as julia and python, or set the variables below to the corresponding installed executable paths.
 
@@ -148,8 +155,32 @@ The check script takes exactly one Python argument, as do the sampling examples.
 | Installation worked before the checkout moved | Recreate the local environments at the new path and rerun setup. |
 | No usable candidate is returned | Inspect the status and trial counts before accessing results; sampling can return no valid point. |
 
-## Licensing and publication status
+## Citation
 
-QHDOPT's project-level licensing and distribution terms remain undecided. This local candidate is not approved for public publication and is not presented as an open-source release.
+If you use this Julia implementation of QHDOPT in your research, please cite the original QHDOPT paper below. For reproducibility, also report the repository URL and the software version or commit you used.
 
-The included beta worker and native TNC files retain their component licenses. See THIRD_PARTY_NOTICES.txt, python/wheels/LICENSE.OpenPhiSolve, and the licenses alongside native/tnc source and its packaged Windows library. These component terms do not assign a license to QHDOPT. Dependencies installed separately retain their own licenses and notices.
+This repository provides a subsequent Julia implementation of the QHDOPT project. Its supported features and validation are documented in this README.
+
+Samuel Kushnir, Jiaqi Leng, Yuxiang Peng, Lei Fan, and Xiaodi Wu (2025). “QHDOPT: A Software for Nonlinear Optimization with Quantum Hamiltonian Descent.” *INFORMS Journal on Computing*, **37**(1), 107–124. [https://doi.org/10.1287/ijoc.2024.0587](https://doi.org/10.1287/ijoc.2024.0587).
+
+```bibtex
+@article{kushnir2025qhdopt,
+  author  = {Kushnir, Samuel and Leng, Jiaqi and Peng, Yuxiang and Fan, Lei and Wu, Xiaodi},
+  title   = {{QHDOPT}: A Software for Nonlinear Optimization with {Quantum Hamiltonian Descent}},
+  journal = {INFORMS Journal on Computing},
+  year    = {2025},
+  volume  = {37},
+  number  = {1},
+  pages   = {107--124},
+  doi     = {10.1287/ijoc.2024.0587},
+  url     = {https://doi.org/10.1287/ijoc.2024.0587}
+}
+```
+
+The same reference is available in [CITATION.bib](CITATION.bib) and as the preferred article citation in [CITATION.cff](CITATION.cff).
+
+## License
+
+QHDOPT's rewritten project code, including the Julia implementation and project-owned worker integration, setup scripts, examples, and native ABI wrapper, is licensed under [BSD-3-Clause](LICENSE). Copyright (c) 2026, Lei Fan.
+
+Third-party components retain their respective licenses and notices; see [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt). These include the bundled beta worker, the original QHDOPT reference notice, and TNC source. The packaged Windows TNC DLL combines components governed by distinct terms and is not exclusively covered by the project license. Dependencies installed separately retain their own licenses and notices.

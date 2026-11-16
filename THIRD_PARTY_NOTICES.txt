@@ -1,9 +1,10 @@
 # Third-party notices
 
-This local QHDOPT public-distribution candidate includes the components below.
-QHDOPT's project-level licensing and distribution terms remain undecided.
-These notices preserve component terms and do not license the Julia rewrite
-or authorize publication of this work-in-progress candidate.
+QHDOPT includes the components below. The rewritten project code, including
+the Julia implementation, project-owned worker integration, setup scripts,
+examples, and native ABI wrapper, is licensed under BSD-3-Clause in the root
+LICENSE, Copyright (c) 2026, Lei Fan. Third-party components retain their own
+terms; the root project license does not replace these component licenses.
 
 OpenPhiSolve / phisolve beta worker
 ----------------------------------
@@ -19,7 +20,8 @@ The original Python implementation was used as a reference:
 https://github.com/PhysOpt/QHDOPT/tree/0f1aec6d1ed83a446fca01f5d23ad1edb7ecdc36
 Its BSD 3-Clause notice is retained in
 LICENSES/QHDOPT-original-BSD-3-Clause.txt.
-This attribution does not assign that license to the new Julia implementation.
+The new Julia implementation is separately licensed under the root LICENSE;
+this retained attribution concerns the original reference implementation.
 
 Native TNC
 ----------
@@ -43,6 +45,6 @@ Julia and Python dependencies installed by the documented setup retain
 their own licenses and notices. They are obtained from their declared
 public package sources and are not bundled as installed environments.
 
-The included component licenses do not establish a root license for QHDOPT.
-This candidate remains local until its project-level terms and final
-publication decision are resolved.
+The root LICENSE applies to the rewritten project code. Preserve these
+component notices and the component license files when redistributing
+the corresponding materials.
